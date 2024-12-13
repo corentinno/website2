@@ -1,0 +1,290 @@
+body {
+    font-family: 'Hammersmith One', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d1861d; 
+    line-height: 1.6;
+    background-color: #1d2638;
+}
+
+header .logo {
+    color: white; 
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d2638;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d1861d;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d1861d;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    color: #d1861d; 
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.explorer-card {
+    position: relative;
+    background-image: url('images /stylo intro.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.explorer-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fcfbfa; 
+    text-align: center;
+    line-height: 300px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+}
+
+section h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #d1861d; 
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #1d2638; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #d1861d; 
+}
+
+.product p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #d1861d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #b87416;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #14203a;
+    color: white;
+    margin-top: 2rem;
+}
+
+.about-section {
+    padding: 2rem;
+    background-color: #1d2638; 
+    color: #fcfbfa; 
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d1861d;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+
+.team-section {
+    padding: 2rem;
+    background-color: #1d2638;
+    color: #1d2638;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d1861d;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 300px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #d1861d;
+    margin-top: 1rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.skills-section {
+    padding: 2rem;
+    background-color: #1d2638;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d1861d;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.skill-card {
+    background-color: #2a3c58; 
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #fcfbfa;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h3 {
+    font-size: 1.6rem;
+    color: #d1861d;
+    margin-bottom: 1rem;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
